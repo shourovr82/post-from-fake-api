@@ -1,0 +1,88 @@
+reset code starts
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* reset code end */
+
+
+h1{
+ text-align: center;
+ font-size: 5rem; 
+ color: rgb(199, 50, 5);
+ font-family: monospace;
+ text-transform: uppercase;
+ transition: .5s;
+
+}
+h1:hover{
+  color: red;
+ 
+  transition: .5s;
+}
+
+
+/* posts starts here */
+.posts{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+ 
+
+.post{
+  width: 18%;
+  margin:.3rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  padding: 1rem;
+  transition: all 0.4s;
+
+}
+.post:hover{
+  color: #fff;
+  background-color: brown;
+  border-radius: .5rem;
+  transform:  scale(1.8)
+ 
+}
+
+
+.post:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+
+/* ---responsive parts start */
+ 
+@media screen and (max-width: 992px) {
+  .post{
+
+    width: 40%;
+    
+  }
+  .post:hover{
+    transform: scale(1.2);
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .post{
+   
+    width: 85%;
+   
+  }
+  .post:hover{
+    transform: scale(.9);
+  }
+  
+}
+
+
+/* ---responsive parts end */
